@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "a73da058-5404-4fdc-ae91-fede513a9ad4",
+		"name": "exam_spring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "EmployeeApi",
+			"item": [
+				{
+					"name": "Create new",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"hieu\",\r\n    \"age\" : 20,\r\n    \"salary\" : 2000\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{Domain}}/api/v1/employees",
+							"protocol": "http",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://{{Domain}}/api/v1/employees/1",
+							"protocol": "http",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employees",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Detail",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{Domain}}/api/v1/employees",
+							"protocol": "http",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{Domain}}/api/v1/employees",
+							"protocol": "http",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://{{Domain}}/api/v1/employees/1",
+							"protocol": "http",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"employees",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
